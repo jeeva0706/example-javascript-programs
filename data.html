@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="demo">
+
+    <button onclick="demodata()">sumbit</button>
+  
+    <div id="data">
+
+    </div>
+
+    <script>
+
+        // let amonut = "";
+
+        // amonut = 1000;
+
+        // console.log("your bill amount is", amonut);
+
+        // console.log(typeof(amonut)); 
+
+        // let a= 100;
+
+        // let data= a>50 && a/10==10;
+
+        // console.log(data);
+
+        function demodata() {
+            const data = Number(document.getElementById("demo").value);
+            const answer = data/2.54;
+            const result = document.getElementById("data");
+            result.innerHTML = answer.toFixed(2), "inches";
+        }
+
+    </script>
+
+</body>
+</html>
